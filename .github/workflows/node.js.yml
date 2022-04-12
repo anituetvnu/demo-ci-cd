@@ -19,3 +19,4 @@ jobs:
         cd /var/www/html
         npm i
         npm run build
+        pm2 restart pm2.json
