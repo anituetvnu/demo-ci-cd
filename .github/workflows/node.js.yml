@@ -16,4 +16,5 @@ jobs:
         pwd && ls
         mkdir -p /var/www/html
         sudo cp -r . /var/www/html
+        npm i
         npm run build
