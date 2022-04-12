@@ -14,7 +14,6 @@ jobs:
     - uses: actions/checkout@v2
     - run: |
         pwd && ls
-        mkdir -p /home/ubuntu/abc
-        sudo cp -r . /home/ubuntu/abc
-        #cd /var/www/html
-        #npm run build
+        mkdir -p /var/www/html
+        sudo cp -r . /var/www/html
+        npm run build
