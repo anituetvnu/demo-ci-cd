@@ -14,9 +14,9 @@ jobs:
     - uses: actions/checkout@v2
     - run: |
         pwd && ls
-        mkdir -p /var/www/html
-        sudo cp -r . /var/www/html
-        cd /var/www/html
+        mkdir -p /home/ubuntu/demo-ci-cd
+        sudo cp -r . /home/ubuntu/demo-ci-cd
+        cd /home/ubuntu/demo-ci-cd
         npm i
         npm run build
         pm2 restart pm2.json
