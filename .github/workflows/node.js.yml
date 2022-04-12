@@ -12,6 +12,8 @@ jobs:
     runs-on: self-hosted
     steps:
     - run: |
-        cp . /var/www/html
-        cd /var/www/html
-        npm run build
+        pwd && ls
+        mkdir -p /home/ubuntu/abc
+        sudo cp -r . /home/ubuntu/abc
+        #cd /var/www/html
+        #npm run build
