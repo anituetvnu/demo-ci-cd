@@ -17,6 +17,9 @@ jobs:
         mkdir -p /home/ubuntu/demo-ci-cd
         sudo cp -r . /home/ubuntu/demo-ci-cd
         cd /home/ubuntu/demo-ci-cd
+        cd /home/ubuntu/demo-ci-cd/web-app-blogs && yarn
+        cd /home/ubuntu/demo-ci-cd/web-app-header && yarn
+        cd /home/ubuntu/demo-ci-cd/web-container && yarn
         # npm i
         # npm run build
         # pm2 restart pm2.json
