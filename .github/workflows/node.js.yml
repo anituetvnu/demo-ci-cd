@@ -21,6 +21,9 @@ jobs:
         cd /home/ubuntu/demo-ci-cd/web-app-blogs && npm i && npm run build
         cd /home/ubuntu/demo-ci-cd/web-app-header && npm i && npm run build
         cd /home/ubuntu/demo-ci-cd/web-container && npm i && npm run build
+        sudo cp -r /home/ubuntu/demo-ci-cd/web-container/build/* /var/www/tmfr.tk/html
+        sudo cp -r /home/ubuntu/demo-ci-cd/web-app-blogs/build/* /var/www/tmfr.ml/html
+        sudo cp -r /home/ubuntu/demo-ci-cd/web-app-header/build/* /var/www/tmfr.ga/html
         # npm i
         # npm run build
         # pm2 restart pm2.json
