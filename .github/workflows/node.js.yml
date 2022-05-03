@@ -17,7 +17,7 @@ jobs:
         sudo rm -rf /home/ubuntu/demo-ci-cd
         mkdir -p /home/ubuntu/demo-ci-cd
         sudo cp -r . /home/ubuntu/demo-ci-cd
-        sudo -R chmod 777 /home/ubuntu/demo-ci-cd
+        sudo chmod -R 777 /home/ubuntu/demo-ci-cd
         cd /home/ubuntu/demo-ci-cd/web-app-blogs && npm run build
         cd /home/ubuntu/demo-ci-cd/web-app-header && npm run build
         cd /home/ubuntu/demo-ci-cd/web-container && npm run build
