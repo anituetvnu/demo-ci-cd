@@ -33,8 +33,8 @@ function Home({ history }) {
 
   return (
     <div className="container">
-       <Header />
-       <Blogs />
+      <Header />
+      <Blogs />
     </div>
   );
 }

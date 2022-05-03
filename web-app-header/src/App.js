@@ -7,7 +7,7 @@ const defaultHistory = createBrowserHistory();
 function App({ history = defaultHistory }) {
   return (
     <div>
-      <p>MICRO FRONTEND DEMO</p>
+      <p>MICRO FRONTEND DEMO(ONLY CONTAIN HEADER)</p>
     </div>
   );
 }
