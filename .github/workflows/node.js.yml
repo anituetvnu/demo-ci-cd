@@ -14,10 +14,7 @@ jobs:
     - uses: actions/checkout@v2
     - run: |
         pwd && ls
-        sudo rm -rf /home/ubuntu/demo-ci-cd
-        mkdir -p /home/ubuntu/demo-ci-cd
         sudo cp -r . /home/ubuntu/demo-ci-cd
-        sudo chmod -R 777 /home/ubuntu/demo-ci-cd
         cd /home/ubuntu/demo-ci-cd/web-app-blogs && npm i && npm run build
         cd /home/ubuntu/demo-ci-cd/web-app-header && npm i && npm run build
         cd /home/ubuntu/demo-ci-cd/web-container && npm i && npm run build
