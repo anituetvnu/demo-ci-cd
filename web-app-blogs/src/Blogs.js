@@ -6,7 +6,7 @@ import {
 import axios from "axios";
 import "./App.css";
 
-const defauleData = [
+const defaultData = [
   {
      "source":{
         "id":"the-washington-post",
@@ -274,8 +274,8 @@ function App() {
   useEffect(() => {
     axios
       .get(`https://newsapi.org/v2/everything?q=${key}&from=2022-04-03&sortBy=publishedAt&apiKey=f8fbc670f1a34eb485adb31cb65d8911`)
-      .then((response) => setData(response?.data?.articles || defauleData))
-      .catch(() => setData(defauleData));
+      .then((response) => setData(response?.data?.articles || defaultData))
+      .catch(() => setData(defaultData));
   }, [key])
 
   return (
