@@ -287,7 +287,7 @@ function App() {
         data.map((blog, index) => {
           return (
             <div className="mt-4">
-              <div className="card">
+              <div className="card" style={{flexDirection: "row"}}>
                   <div class="card-body">
                     <h5 class="card-title">{`#${index + 1}`}</h5>
                     <p class="card-text">{blog.title}</p>
